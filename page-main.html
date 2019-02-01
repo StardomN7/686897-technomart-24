@@ -23,13 +23,11 @@
         <span>+7(812)555-05-55</span>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
         <div class="personal-area-enter">
-          <ul>
-            <li><span class="sign-in">Войти</span></li>
-            <li><span class="sign-up">Регистрация</span></li>
-          </ul>
+          <input class="sign-in-button" type="button" value="Войти">
+          <input class="sign-up-button" type="button" value="Регистрация">
         </div>
         <nav class="site-navigation">
-          <ul>
+          <ul class="site-navigation-list">
             <li><a href="#">Главная</a></li>
             <li><a href="#">Компания</a></li>
             <li><a href="#">Каталог</a></li>
@@ -45,15 +43,162 @@
 
     <main>
 
-      <!--
       <section class="main-content">
         <h2 class="hidden">Основное содержание главной страницы</h2>
+        <ul class="main-categories">
+          <li class="new-item">
+            <a class="category-card" href="#">
+              <h3>Материалы</h3>
+              <b>На любой вкус</b>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <h3>Инструмент</h3>
+              <b>На все случаи</b>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <h3>Техника</h3>
+              <b>Для стройки</b>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <h3>Скидки 50%</h3>
+              <b>На 350 товаров</b>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#">
+              <h3>Доставка</h3>
+              <b>Бесплатно</b>
+            </a>
+          </li>
+        </ul>
+        <div class="tool-gallery">
+          <h3>Дрели</h3>
+          <b>Соседям на радость</b>
+          <a href="#"><img class="tool-gallery-item" src="img/Drills-welcome.jpg" width="620" height="266" alt="Категория: дрели"></a>
+          <a class="button" href="#">Открыть каталог</a>
+        </div>
+      </section>
+
+      <section class="popular-items">
+        <h2>Популярные товары:</h2>
+        <a class="button" href="#">Все популярные товары</a>
+        <ol class="popular-item-rating">
+          <li class="shop-item">
+            <h3><a href="#">
+              <span class="shop-item-name">Перфоратор BOSCH BFG 9000</span></a>
+            </h3>
+            <p class="shop-item-photo">
+              <img src="img/Perforator_4.jpg" width="20" height="20" alt="Фото товара">
+            </p>
+            <p class="shop-item-price">
+              <b class="old-price">32500 Р.</b>
+              <b class="new-price">25500 Р.</b>
+            </p>
+          </li>
+          <li class="shop-item">
+            <h3><a href="#">
+              <span class="shop-item-name">Перфоратор BOSCH BFG 3000</span></a>
+            </h3>
+            <p class="shop-item-photo">
+              <img src="img/Perforator_3.jpg" width="20" height="20" alt="Фото товара">
+            </p>
+            <p class="shop-item-price">
+              <b class="old-price">22500 Р.</b>
+              <b class="new-price">12500 Р.</b>
+            </p>
+          </li>
+          <li class="shop-item">
+            <h3><a href="#">
+              <span class="shop-item-name">Перфоратор BOSCH BFG 6000</span></a>
+            </h3>
+            <p class="shop-item-photo">
+              <img src="img/Perforator_2.jpg" width="20" height="20" alt="Фото товара">
+            </p>
+            <p class="shop-item-price">
+              <b class="old-price">30500 Р.</b>
+              <b class="new-price">25500 Р.</b>
+            </p>
+          </li>
+          <li class="shop-item new-item">
+            <h3><a href="#">
+              <span class="shop-item-name">Перфоратор BOSCH BFG 2000</span></a>
+            </h3>
+            <p class="shop-item-photo">
+              <img src="img/Perforator_3.jpg" width="20" height="20" alt="Фото товара">
+            </p>
+            <p class="shop-item-price">
+              <b class="new-price">12500 Р.</b>
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="popular-manufacturers">
+        <h2>Популярные производители:</h2>
+        <a class="button" href="#">Все производители</a>
+        <ol class="popular-manufacturers-rating">
+          <li><a class="manufacturer-button" href="#">
+            <img src="img/bosch.jpg" width="126" height="37" alt="Bosch">
+            Bosch
+          </a></li>
+          <li><a class="manufacturer-button" href="#">
+            <img src="img/Makita.jpg" width="123" height="40" alt="Makita">
+            Makita
+          </a></li>
+          <li><a class="manufacturer-button" href="#">
+            <img src="img/DeWALT.jpg" width="146" height="44" alt="DeWALT">
+            DeWALT
+          </a></li>
+          <li><a class="manufacturer-button" href="#">
+            <img src="img/Interskol.jpg" width="200" height="88" alt="Интерскол">
+            Интерскол
+          </a></li>
+          <li><a class="manufacturer-button" href="#">
+            <img src="img/Hitachi.jpg" width="169" height="31" alt="Hitachi">
+            Hitachi
+          </a></li>
+          <li><a class="manufacturer-button" href="#">
+            <img src="img/LG.jpg" width="121" height="73" alt="LG">
+            LG
+          </a></li>
+          <li><a class="manufacturer-button" href="#">
+            <img src="img/AEG.jpg" width="151" height="96" alt="AEG">
+            AEG
+          </a></li>
+          <li><a class="manufacturer-button" href="#">
+            <img src="img/Metabo.jpg" width="204" height="69" alt="Metabo">
+            Metabo
+          </a></li>
+        </ol>
       </section>
 
       <section class="services">
         <h2>Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <ul class="services-list">
+          <li>
+            <span class="service-button">Доставка</span>
+          </li>
+          <li>
+            <span class="service-button">Гарантия</span>
+          </li>
+          <li>
+            <span class="service-button">Кредит</span>
+          </li>
+        </ul>
+        <h3>Доставка</h3>
+        <p>
+          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+          Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+        </p>
       </section>
-      -->
 
       <section class="about-us">
         <h2>Компания "Техномарт"</h2>
@@ -77,7 +222,7 @@
     <footer class="page-footer">
       <section class="address-and-navigation">
         <a href="#"><img src="#" width="20" height="20" alt="Логотип магазина"></a>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
            +7(812)555-05-55</p>
         <ul class="footer-navigation">
           <li><a href="#">Компания</a></li>
