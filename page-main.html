@@ -4,6 +4,10 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин товаров для ремонта "Техномарт"</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -11,7 +15,7 @@
     <header class="page-header">
       <h1 class="hidden">Магазин товаров для ремонта "Техномарт"</h1>
       <section class="users-services">
-        <a href="#">
+        <a class="logo" href="#">
           <img src="#" width="20" height="20" alt="Магазин &laquo;Техномарт&raquo;">
         </a>
         <form action="https://echo.htmlacademy.ru" method="get">
@@ -52,31 +56,31 @@
       <section class="main-content">
         <h2 class="hidden">Основное содержание главной страницы</h2>
         <ul class="main-categories">
-          <li class="new-item">
+          <li class="materials-card new-item">
             <a class="category-card" href="catalog/materials.html">
               <h3>Материалы</h3>
               <b>На любой вкус</b>
             </a>
           </li>
-          <li>
+          <li class="tools-card">
             <a class="category-card" href="catalog/tools.html">
               <h3>Инструмент</h3>
               <b>На все случаи</b>
             </a>
           </li>
-          <li>
+          <li class="technics-card">
             <a class="category-card" href="catalog/technics.ntml">
               <h3>Техника</h3>
               <b>Для стройки</b>
             </a>
           </li>
-          <li>
+          <li class="discount-card">
             <a class="category-card" href="catalog/deposites.html">
               <h3>Скидки 50%</h3>
               <b>На 350 товаров</b>
             </a>
           </li>
-          <li>
+          <li class="delivery-card">
             <a class="category-card" href="delivery.html">
               <h3>Доставка</h3>
               <b>Бесплатно</b>
@@ -92,8 +96,10 @@
       </section>
 
       <section class="popular-items">
-        <h2>Популярные товары:</h2>
-        <a class="button" href="catalog/popular.html">Все популярные товары</a>
+        <div class="catalog-title">
+          <h2>Популярные товары:</h2>
+          <a class="button" href="catalog/popular.html">Все популярные товары</a>
+        </div>
         <ol class="popular-item-rating" aria-label="Рейтинг популярных товаров">
           <li class="shop-item">
             <h3><a href="catalog/tools/Perforator-bosch-bfg-9000">
@@ -146,8 +152,10 @@
       </section>
 
       <section class="popular-manufacturers">
-        <h2>Популярные производители:</h2>
-        <a class="button" href="manufacturers.html">Все производители</a>
+        <div class="catalog-title">
+          <h2>Популярные производители:</h2>
+          <a class="button" href="manufacturers.html">Все производители</a>
+        </div>
         <ol class="popular-manufacturers-rating">
           <li><a class="manufacturer-button" href="manufacturers/bosch">
             <img src="img/bosch.jpg" width="126" height="37" alt="Bosch">
@@ -207,7 +215,7 @@
       </section>
 
       <section class="about-us">
-        <h2>Компания "Техномарт"</h2>
+        <h2>Компания &laquo;Техномарт&raquo;</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
         <ul class="transport-services">
@@ -227,7 +235,7 @@
 
     <footer class="page-footer">
       <section class="address-and-navigation">
-        <a href="#"><img src="#" width="20" height="20" alt="Логотип магазина"></a>
+        <a class="logo-footer" href="#"><img src="#" width="20" height="20" alt="Логотип магазина"></a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
            +7(812)555-05-55</p>
         <ul class="footer-navigation" aria-label="Навигация по сайту">
@@ -287,12 +295,20 @@
     <label for="client-name">Ваше имя:</label>
     <input type="text" name="client-name" id="client-name" placeholder="Имя Фамилия">
     <label for="client-email">Ваш e-mail:</label>
-    <input type="email" name="client-email" id="client-name" placeholder="email@example.com">
+    <input type="email" name="client-email" id="client-email" placeholder="email@example.com">
     <label for="client-message">Текст письма:</label>
     <textarea name="client-message" id="client-message" rows="10" cols="20">
       В свободной форме
     </textarea>
   </form>
+  <div class="client-message-button">
+    <input type="submit" name="send-message" value="Отправить" aria-label="Отправить сообщение">
+  </div>
+</div>
+
+<div class="full-map">
+  <img src="img\map-full.jpg" alt="Карта">
+  <button class="close-window" name="closing-button" aria-label="Закрыть окно"><span>X</span></button>
 </div>
 
   </body>

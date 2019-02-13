@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Магазин товаров для ремонта "Техномарт"</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Магазин товаров для ремонта "Техномарт"</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
   <body>
 
     <header class="page-header">
       <h1 class="hidden">Магазин товаров для ремонта "Техномарт"</h1>
       <section class="users-services">
-        <a href="#">
+        <a class="logo" href="#">
           <img src="#" width="20" height="20" alt="Магазин &laquo;Техномарт&raquo;">
         </a>
         <form action="https://echo.htmlacademy.ru" method="get">
@@ -48,7 +52,7 @@
       </section>
     </header>
 
-    <main>
+    <main class="catalog-container">
 
       <h1>Перфораторы</h1>
       <ul class="page-path" aria-label="Путь к текущей странице">
@@ -71,7 +75,7 @@
           <ul>
             <li class="filter-option checked">
               <input type="checkbox" name="checkbox-manufacturer" id="select-bosch"
-              class="visually-hidden filter-input filter-input-checkbox">
+              class="visually-hidden filter-input filter-input-checkbox" checked>
               <label for="select-bosch" lang="en">Bosch</label>
             </li>
             <li class="filter-option">
@@ -81,7 +85,7 @@
             </li>
             <li class="filter-option checked">
               <input type="checkbox" name="checkbox-manufacturer" id="select-makita"
-              class="visually-hidden filter-input filter-input-checkbox">
+              class="visually-hidden filter-input filter-input-checkbox" checked>
               <label for="select-makita" lang="en">Makita</label>
             </li>
             <li class="filter-option">
@@ -102,7 +106,7 @@
             <li class="filter-option checked">
               <label>
                 <input type="radio" name="radio-power-categories" value="accumulating"
-                class="visually-hidden filter-input filter-input-radio">
+                class="visually-hidden filter-input filter-input-radio" checked>
                 Аккумуляторные
               </label>
             </li>
@@ -121,6 +125,7 @@
 
       <section class="catalog-tools-perforators">
       <h2 class="hidden">Каталог перфораторов</h2>
+      <div class="sorting-settings">
       <h2>Сортировка:</h2>
       <ul class="sorting">
         <li>
@@ -133,6 +138,7 @@
           <button class="sorting-button">По функционалу</button>
         </li>
       </ul>
+    </div>
       <ul class="shop-list">
         <li class="shop-item">
           <h3><a href="catalog/tools/Perforator-bosch-bfg-3000">
@@ -264,7 +270,7 @@
 
     <footer class="page-footer">
       <section class="address-and-navigation">
-        <a href="#"><img src="#" width="20" height="20" alt="Логотип магазина"></a>
+        <a class="logo-footer" href="#"><img src="#" width="20" height="20" alt="Логотип магазина"></a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
            +7(812)555-05-55</p>
         <ul class="footer-navigation" aria-label="Навигация по сайту">
@@ -322,12 +328,14 @@
   <img src="#" alt="Товар добавлен в корзину">
   <p>Товар добавлен в корзину!</p>
   <button class="close-window" name="closing-button" aria-label="Закрыть окно"><span>X</span></button>
-  <a class="button gotoshop-button" href="cart.html">
-    Оформить заказ
-  </a>
-  <a class="button gotocart-button" href="#">
-    Продолжить покупки
-  </a>
+  <div class="item-added-buttons">
+    <a class="button gotocart-button" href="cart.html">
+      Оформить заказ
+    </a>
+    <a class="button gotoshop-button" href="#">
+      Продолжить покупки
+    </a>
+  </div>
 </div>
 
   </body>
