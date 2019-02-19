@@ -14,28 +14,35 @@
 
     <header class="page-header">
       <h1 class="hidden">Магазин товаров для ремонта "Техномарт"</h1>
-      <section class="users-services">
-        <a class="logo" href="#">
-          <img src="#" width="20" height="20" alt="Магазин &laquo;Техномарт&raquo;">
-        </a>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <label class="user-navigation search-field">
-            Поиск:<input type="search" name="site-search" id="site-search">
-          </label>
-        </form>
-        <a href="bookmarks.html" class="user-navigation bookmarks-page">Закладки: 0</a>
-        <a href="cart.html" class="user-navigation cart-page">Корзина: 0</a>
-        <a href="order.html" class="user-navigation place-an-order">Оформить заказ</a>
-      </section>
-      <section class="contacts-and-interaction">
-        <i>Интернет-магазин строительных материалов и инструментов для ремонта</i>
-        <span>+7(812)555-05-55</span>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
-        <div class="personal-area-enter">
-          <a href="#popup-signin" class="button user-navigation sign-in-button"
-          aria-label="Кнопка войти в личный кабинет">Войти</a>
-          <a href="#popup-signup" class="button user-navigation sign-up-button"
-          aria-label="Кнопка регистрация пользователя">Регистрация</a>
+      <div class="users-services">
+        <div class="centering-container">
+          <a class="logo" href="#">
+            <img src="#" width="20" height="20" alt="Магазин &laquo;Техномарт&raquo;">
+          </a>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <label class="user-navigation search-field">
+              Поиск:<input type="search" name="site-search" id="site-search">
+            </label>
+          </form>
+          <div class="order-buttons">
+            <a href="bookmarks.html" class="user-navigation bookmarks-page">Закладки: 0</a>
+            <a href="cart.html" class="user-navigation cart-page">Корзина: 0</a>
+            <a href="order.html" class="user-navigation place-an-order">Оформить заказ</a>
+          </div>
+        </div>
+      </div>
+      <div class="centering-container">
+        <div class="contacts-and-personal">
+          <i>Интернет-магазин строительных материалов и инструментов для ремонта</i>
+          <div class="header-contacts">
+            <span>+7(812)555-05-55</span>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+          </div>
+          <div class="personal-area-enter">
+            <a href="#popup-signin" class="button user-navigation sign-in-button"
+            aria-label="Кнопка войти в личный кабинет">Войти</a>
+            <a href="#popup-signup" class="button user-navigation sign-up-button"            aria-label="Кнопка регистрация пользователя">Регистрация</a>
+          </div>
         </div>
         <nav class="site-navigation" aria-label="Главная панель навигации">
           <ul class="site-navigation-list">
@@ -48,11 +55,12 @@
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
-      </section>
+      </div>
     </header>
 
-    <main>
+    <main class="main-page">
 
+    <div class="centering-container">
       <section class="main-content">
         <h2 class="hidden">Основное содержание главной страницы</h2>
         <ul class="main-categories">
@@ -191,29 +199,39 @@
           </a></li>
         </ol>
       </section>
+    </div>
 
+    <div class="wrapper-services">
+      <div class="centering-container">
       <section class="services">
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul class="services-list" aria-label="Список услуг" role="tablist">
-          <li>
-            <span class="service-button" id="delivery-info">Доставка</span>
-          </li>
-          <li>
-            <span class="service-button">Гарантия</span>
-          </li>
-          <li>
-            <span class="service-button">Кредит</span>
-          </li>
-        </ul>
-        <h3>Доставка</h3>
-        <p role="tabpanel" aria-labelledby="delivery-info">
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-        </p>
+        <div class="services-info-block">
+          <ul class="services-list" aria-label="Список услуг" role="tablist">
+            <li>
+              <span class="service-button" id="delivery-info">Доставка</span>
+            </li>
+            <li>
+              <span class="service-button">Гарантия</span>
+            </li>
+            <li>
+              <span class="service-button">Кредит</span>
+            </li>
+          </ul>
+          <div class="delivery-text">
+            <h3>Доставка</h3>
+            <p role="tabpanel" aria-labelledby="delivery-info">
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+            </p>
+          </div>
+        </div>
       </section>
+      </div>
+    </div>
 
+    <div class="company-info centering-container">
       <section class="about-us">
         <h2>Компания &laquo;Техномарт&raquo;</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -231,28 +249,37 @@
         <a href="#"><img src="img/Map.jpg" width="20" height="20" alt="Адрес магазина - Санкт-Петербург, улица Большая Конюшенная, дом 19"></a>
         <a class="button" href="contact-us.html">Заблудились? Напишите нам!</a>
       </section>
+    </div>
     </main>
 
     <footer class="page-footer">
-      <section class="address-and-navigation">
-        <a class="logo-footer" href="#"><img src="#" width="20" height="20" alt="Логотип магазина"></a>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-           +7(812)555-05-55</p>
-        <ul class="footer-navigation" aria-label="Навигация по сайту">
-          <li><a href="company.html">Компания</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="categories" aria-label="Категории товаров">
-          <li><a href="catalog/materials">Материалы</a></li>
-          <li><a href="catalog/technics">Техника</a></li>
-          <li><a href="catalog/tools">Инструмент</a></li>
-          <li><a href="special-offers.html">Спецпредложения</a></li>
-        </ul>
-      </section>
-      <section class="development">
+      <div class="address-and-navigation">
+      <div class="centering-container">
+        <div class="footer-top-row">
+          <a class="logo-footer" href="#"><img src="#" width="20" height="20" alt="Логотип магазина"></a>
+          <ul class="footer-navigation" aria-label="Навигация по сайту">
+            <li><a href="company.html">Компания</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom-row">
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+             +7(812)555-05-55</p>
+          <ul class="categories" aria-label="Категории товаров">
+            <li><a href="catalog/materials">Материалы</a></li>
+            <li><a href="catalog/technics">Техника</a></li>
+            <li><a href="catalog/tools">Инструмент</a></li>
+            <li><a href="special-offers.html">Спецпредложения</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <div class="development">
+      <div class="centering-container">
         <b>© 2010-2017 Компания "Техномарт"
            Все права защищены</b>
         <ul class="social-button-list" aria-label="Магазин Техномарт в социальных сетях">
@@ -275,7 +302,7 @@
             </a>
           </li>
         </ul>
-        <ul>
+        <ul class="developers-contacts">
           <li>
             <p>Обратная связь:</p>
             <p class="mail-developers" lang="en" aria-label="Электронная почта">mail@htmlacademy.ru</p>
@@ -285,7 +312,8 @@
             <a class="copyright" href="https://htmlacademy.ru/" lang="en">htmlacademy.ru</a>
           </li>
         </ul>
-      </section>
+      </div>
+      </div>
     </footer>
 
 <!-- Всплывающие элементы -->

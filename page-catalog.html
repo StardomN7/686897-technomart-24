@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <title>Магазин товаров для ремонта "Техномарт"</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин товаров для ремонта "Техномарт"</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
 
   <body>
 
     <header class="page-header">
       <h1 class="hidden">Магазин товаров для ремонта "Техномарт"</h1>
-      <section class="users-services">
-        <a class="logo" href="#">
-          <img src="#" width="20" height="20" alt="Магазин &laquo;Техномарт&raquo;">
-        </a>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <label class="user-navigation search-field">
-            Поиск:<input type="search" name="site-search" id="site-search">
-          </label>
-        </form>
-        <a href="bookmarks.html" class="user-navigation bookmarks-page">Закладки: 0</a>
-        <a href="cart.html" class="user-navigation cart-page full-cart">Корзина: 0</a>
-        <a href="order.html" class="user-navigation place-an-order">Оформить заказ</a>
-      </section>
-      <section class="contacts-and-interaction">
-        <i>Интернет-магазин строительных материалов и инструментов для ремонта</i>
-        <span>+7(812)555-05-55</span>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+      <div class="users-services">
+        <div class="centering-container">
+          <a class="logo" href="#">
+            <img src="#" width="20" height="20" alt="Магазин &laquo;Техномарт&raquo;">
+          </a>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <label class="user-navigation search-field">
+              Поиск:<input type="search" name="site-search" id="site-search">
+            </label>
+          </form>
+          <div class="order-buttons">
+            <a href="bookmarks.html" class="user-navigation bookmarks-page">Закладки: 0</a>
+            <a href="cart.html" class="user-navigation cart-page">Корзина: 0</a>
+            <a href="order.html" class="user-navigation place-an-order">Оформить заказ</a>
+          </div>
+        </div>
+      </div>
+      <div class="centering-container">
+        <div class="contacts-and-personal">
+          <i>Интернет-магазин строительных материалов и инструментов для ремонта</i>
+          <div class="header-contacts">
+            <span>+7(812)555-05-55</span>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+          </div>
         <div class="personal-area">
           <span><a href="personal.html">Равшан Джамшутович</a></span>
           <ul>
@@ -38,41 +45,53 @@
             <li><a href="personal.html">Личный кабинет</a></li>
           </ul>
         </div>
-        <nav class="site-navigation" aria-label="Главная панель навигации">
-          <ul class="site-navigation-list">
-            <li><a href="page-main.html">Главная</a></li>
-            <li><a href="company.html">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="special-offers.html">Спецпредложения</a></li>
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
-      </section>
-    </header>
+      </div>
+      <nav class="site-navigation" aria-label="Главная панель навигации">
+        <ul class="site-navigation-list">
+          <li><a href="#">Главная</a></li>
+          <li><a href="company.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="special-offers.html">Спецпредложения</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main class="catalog-container">
+    <main class="catalog-page">
 
-      <h1>Перфораторы</h1>
-      <ul class="page-path" aria-label="Путь к текущей странице">
-        <li><a href="page-main.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="catalog/tools">Инструмент</a></li>
-        <li class="page-path-current"><a>Перфораторы</a></li>
-      </ul>
+      <div class="centering-container">
+        <ul class="page-path" aria-label="Путь к текущей странице">
+          <li><a href="page-main.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="catalog/tools">Инструмент</a></li>
+          <li class="page-path-current"><a>Перфораторы</a></li>
+        </ul>
+      </div>
+      <div class="centering-container title-wrapper"><h1>Перфораторы</h1></div>
+
+      <div class="centering-container shop-columns">
       <section class="filter">
         <h2>Фильтр:</h2>
         <form action="https://echo.htmlacademy.ru" method="post" oninput="maxprice.value=price-range.value">
           <label class="h3-class" for="price-range">Цена:</label>
-          <input type="range" id="price-range" name="price-range" min="0" max="35000" step="1" aria-label="Фильтр по ценовому диапазону">
-          <output name="minprice">0</output>
-          <p> &mdash; </p>
-          <output name="maxprice">30000</output>
+          <div>
+            <div class="price-input">
+              <input type="range" id="price-range" name="price-range" min="0" max="35000"
+               step="1" aria-label="Фильтр по ценовому диапазону">
+            </div>
+            <div class="price-outputs">
+              <output name="minprice">0</output>
+              <p> &mdash; </p>
+              <output name="maxprice">30000</output>
+            </div>
+          </div>
         <!-- Фильтр по цене -->
         <fieldset>
           <legend class="h3-class" aria-label="Фильтр по производителям">Производители:</legend>
-          <ul>
+          <ul class="filter-manufacturers">
             <li class="filter-option checked">
               <input type="checkbox" name="checkbox-manufacturer" id="select-bosch"
               class="visually-hidden filter-input filter-input-checkbox" checked>
@@ -102,7 +121,7 @@
         </fieldset>
         <fieldset id="power-categories">
           <legend class="h3-class" aria-label="Фильтр по типу питания">Питание:</legend>
-          <ul>
+          <ul class="filter-power">
             <li class="filter-option checked">
               <label>
                 <input type="radio" name="radio-power-categories" value="accumulating"
@@ -126,8 +145,10 @@
       <section class="catalog-tools-perforators">
       <h2 class="hidden">Каталог перфораторов</h2>
       <div class="sorting-settings">
-      <h2>Сортировка:</h2>
       <ul class="sorting">
+        <li>
+          <h2>Сортировка:</h2>
+        </li>
         <li>
           <button class="sorting-button chosen-sorting">По цене</button>
         </li>
@@ -255,39 +276,50 @@
         <li class="page-number page-next"><a href="#" aria-label="Перейти на следующую страницу">Следующая</a></li>
       </ul>
     </section>
+  </div>
 
     <section class="info-perforators">
-      <h2>Пара слов о перфораторах</h2>
-      <p>Перфоратор - универсальный строительный инструмент.
-        Предназначен для сверления и дробления отверстий в кирпиче, бетоне и камне.
-        Существуют электромеханические и пневматические перфораторы.
-        Современные модели могут выполнять функции дрели, шуруповёрта и отбойного молотка.
-        В ассортиментном ряду есть выбор "трехрежимников":
-        в одном устройсте будут совмещены отбойный молоток и ударная дрель.</p>
+      <div class="centering-container">
+        <h2>Пара слов о перфораторах</h2>
+        <p>Перфоратор - универсальный строительный инструмент.
+          Предназначен для сверления и дробления отверстий в кирпиче, бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы.
+          Современные модели могут выполнять функции дрели, шуруповёрта и отбойного молотка.
+          В ассортиментном ряду есть выбор "трехрежимников":
+          в одном устройсте будут совмещены отбойный молоток и ударная дрель.</p>
+        </div>
     </section>
 
     </main>
 
     <footer class="page-footer">
-      <section class="address-and-navigation">
-        <a class="logo-footer" href="#"><img src="#" width="20" height="20" alt="Логотип магазина"></a>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-           +7(812)555-05-55</p>
-        <ul class="footer-navigation" aria-label="Навигация по сайту">
-          <li><a href="company.html">Компания</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="categories" aria-label="Категории товаров">
-          <li><a href="catalog/materials">Материалы</a></li>
-          <li><a href="catalog/technics">Техника</a></li>
-          <li><a href="catalog/tools">Инструмент</a></li>
-          <li><a href="special-offers.html">Спецпредложения</a></li>
-        </ul>
-      </section>
-      <section class="development">
+      <div class="address-and-navigation">
+      <div class="centering-container">
+        <div class="footer-top-row">
+          <a class="logo-footer" href="#"><img src="#" width="20" height="20" alt="Логотип магазина"></a>
+          <ul class="footer-navigation" aria-label="Навигация по сайту">
+            <li><a href="company.html">Компания</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom-row">
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+             +7(812)555-05-55</p>
+          <ul class="categories" aria-label="Категории товаров">
+            <li><a href="catalog/materials">Материалы</a></li>
+            <li><a href="catalog/technics">Техника</a></li>
+            <li><a href="catalog/tools">Инструмент</a></li>
+            <li><a href="special-offers.html">Спецпредложения</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <div class="development">
+      <div class="centering-container">
         <b>© 2010-2017 Компания "Техномарт"
            Все права защищены</b>
         <ul class="social-button-list" aria-label="Магазин Техномарт в социальных сетях">
@@ -310,7 +342,7 @@
             </a>
           </li>
         </ul>
-        <ul>
+        <ul class="developers-contacts">
           <li>
             <p>Обратная связь:</p>
             <p class="mail-developers" lang="en" aria-label="Электронная почта">mail@htmlacademy.ru</p>
@@ -320,7 +352,8 @@
             <a class="copyright" href="https://htmlacademy.ru/" lang="en">htmlacademy.ru</a>
           </li>
         </ul>
-      </section>
+      </div>
+      </div>
     </footer>
 
 <!-- Всплывающие элементы -->
