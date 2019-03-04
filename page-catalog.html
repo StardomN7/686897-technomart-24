@@ -384,19 +384,23 @@
     </footer>
 
 <!-- Всплывающие элементы -->
-<div class="popup-item-added">
-  <img src="#" alt="Товар добавлен в корзину">
-  <p>Товар добавлен в корзину!</p>
-  <button class="close-window" name="closing-button" aria-label="Закрыть окно"><span>X</span></button>
+<section class="popup-item-added">
+  <button class="close-window" type="button" name="closing-button"><span>Закрыть</span></button>
+  <div class="item-is-added">
+    <img src="#" alt="Товар добавлен в корзину">
+    <p>Товар добавлен в корзину!</p>
+  </div>
   <div class="item-added-buttons">
+    <div class="item-added-buttons-wrapper">
     <a class="button gotocart-button" href="cart.html">
       Оформить заказ
     </a>
     <a class="button gotoshop-button" href="#">
       Продолжить покупки
     </a>
+    </div>
   </div>
-</div>
+</section>
 
   </body>
 </html>

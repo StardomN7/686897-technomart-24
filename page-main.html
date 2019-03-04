@@ -261,7 +261,7 @@
       <section class="our-contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <a href="#"><img src="img/Map.jpg" width="300" height="158" alt="Адрес магазина - Санкт-Петербург, улица Большая Конюшенная, дом 19"></a>
+        <a class="show-map" href="#"><img src="img/Map.jpg" width="300" height="158" alt="Адрес магазина - Санкт-Петербург, улица Большая Конюшенная, дом 19"></a>
         <a class="button" href="contact-us.html">Заблудились? Напишите нам!</a>
       </section>
     </div>
@@ -338,27 +338,35 @@
     </footer>
 
 <!-- Всплывающие элементы -->
-<div class="popup-client-message">
-  <button class="close-window" name="closing-button" aria-label="Закрыть окно"><span>X</span></button>
+<section class="popup-client-message">
+  <button class="close-window" type="button" name="closing-button"><span>Закрыть</span></button>
   <form action="https://echo.htmlacademy.ru" method="post">
-    <label for="client-name">Ваше имя:</label>
-    <input type="text" name="client-name" id="client-name" placeholder="Имя Фамилия">
-    <label for="client-email">Ваш e-mail:</label>
-    <input type="email" name="client-email" id="client-email" placeholder="email@example.com">
-    <label for="client-message">Текст письма:</label>
-    <textarea name="client-message" id="client-message" rows="10" cols="20">
-      В свободной форме
-    </textarea>
+    <div class="popup-upper-row">
+      <div class="contact-us-name">
+        <label for="client-name">Ваше имя:</label>
+        <input type="text" name="client-name" id="client-name" placeholder="Имя Фамилия">
+      </div>
+      <div class="contact-us-email">
+        <label for="client-email">Ваш e-mail:</label>
+        <input type="email" name="client-email" id="client-email" placeholder="email@example.com">
+      </div>
+    </div>
+    <div class="popup-lower-row">
+      <label for="client-message">Текст письма:</label>
+      <textarea name="client-message" id="client-message" rows="6" cols="60">
+        В свободной форме
+      </textarea>
+    </div>
   </form>
   <div class="client-message-button">
     <input type="submit" name="send-message" value="Отправить" aria-label="Отправить сообщение">
   </div>
-</div>
+</section>
 
-<div class="full-map">
-  <img src="img/map-full.jpg" alt="Карта">
-  <button class="close-window" name="closing-button" aria-label="Закрыть окно"><span>X</span></button>
-</div>
+<section class="full-map">
+  <img src="img/map-full.jpg" alt="Карта" width="100%">
+  <button class="close-window" type="button" name="closing-button"><span>Закрыть</span></button>
+</section>
 
   </body>
 </html>
