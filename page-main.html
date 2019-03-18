@@ -26,9 +26,7 @@
           <div class="order-buttons">
             <a href="bookmarks.html" class="user-navigation bookmarks-page">Закладки: 0</a>
             <a href="cart.html" class="user-navigation cart-page">Корзина: 0</a>
-            <div class="order-container">
-              <a href="order.html" class="user-navigation place-an-order">Оформить заказ</a>
-            </div>
+            <a href="order.html" class="user-navigation place-an-order">Оформить заказ</a>
           </div>
         </div>
       </div>
@@ -36,14 +34,14 @@
         <div class="contacts-and-personal">
           <i>Интернет-магазин строительных материалов и инструментов для ремонта</i>
           <div class="header-contacts">
-            <span class="tel">+7(812)555-05-55</span>
+            <span class="tel">+7 (812) 555-05-55</span>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
           </div>
           <div class="personal-area-enter">
-            <div class="sign-in-button"><a href="#popup-signin" class="button"
-            aria-label="Кнопка войти в личный кабинет">Войти</a></div>
-            <div class="sign-up-button"><a href="#popup-signup" class="button"
-            aria-label="Кнопка регистрация пользователя">Регистрация</a></div>
+            <a href="#popup-signin" class="button sign-in-button"
+            aria-label="Кнопка войти в личный кабинет">Войти</a>
+            <a href="#popup-signup" class="button sign-up-button"
+            aria-label="Кнопка регистрация пользователя">Регистрация</a>
           </div>
         </div>
         <nav class="site-navigation" aria-label="Главная панель навигации">
@@ -68,10 +66,11 @@
         <div class="category-cards-top">
           <ul class="main-categories">
           <li class="materials-card new-item">
+            <div class="sticker-new"></div>
             <a class="category-card" href="catalog/materials.html">
               <div class="category-card-title">
                 <h3>Материалы</h3>
-                <div><b>На любой вкус</b></div>
+                <div class="fake-button"><b>На любой вкус</b></div>
               </div>
             </a>
           </li>
@@ -79,7 +78,7 @@
             <a class="category-card" href="catalog/tools.html">
               <div class="category-card-title">
                 <h3>Инструмент</h3>
-                <div><b>На все случаи</b></div>
+                <div class="fake-button"><b>На все случаи</b></div>
               </div>
             </a>
           </li>
@@ -87,7 +86,7 @@
             <a class="category-card" href="catalog/technics.ntml">
               <div class="category-card-title">
                 <h3>Техника</h3>
-                <div><b>Для стройки</b></div>
+                <div class="fake-button"><b>Для стройки</b></div>
               </div>
             </a>
           </li>
@@ -97,7 +96,7 @@
         <div class="tool-gallery">
           <h3>Дрели</h3>
           <b>Соседям на радость!</b>
-          <div><a href="catalog.html" class="button">Открыть каталог</a></div>
+          <a href="catalog.html" class="button">Открыть каталог</a>
         </div>
         <div class="category-cards-side">
           <ul class="main-categories">
@@ -105,7 +104,7 @@
             <a class="category-card" href="catalog/deposites.html">
               <div class="category-card-title">
                 <h3>Скидки 50%</h3>
-                <div><b>На 350 товаров</b></div>
+                <div class="fake-button"><b>На 350 товаров</b></div>
               </div>
             </a>
           </li>
@@ -113,7 +112,7 @@
             <a class="category-card" href="delivery.html">
               <div class="category-card-title">
                 <h3>Доставка</h3>
-                <div><b>Бесплатно</b></div>
+                <div class="fake-button"><b>Бесплатно</b></div>
               </div>
             </a>
           </li>
@@ -125,7 +124,7 @@
       <section class="popular-items">
         <div class="catalog-title">
           <h2>Популярные товары:</h2>
-          <div><a class="button" href="catalog/popular.html">Все популярные товары</a></div>
+          <a class="button" href="catalog/popular.html">Все популярные товары</a>
         </div>
         <ol class="popular-item-rating" aria-label="Рейтинг популярных товаров">
           <li class="shop-item">
@@ -135,6 +134,10 @@
             <p class="shop-item-photo">
               <img src="img/Perforator-9000.jpg" width="217" height="170" alt="Фото товара перфоратор BOSCH BFG 9000">
             </p>
+            <form class="add-item" action="https://echo.htmlacademy.ru" method="post">
+              <button class="add-to-cart" name="to-cart-button" value="В корзину"><span>Купить</span></button>
+              <button class="add-to-bookmarks" name="to-bookmarks-button" value="В закладки"><span>В закладки</span></button>
+            </form>
             <p class="shop-item-price" aria-label="Цена товара">
               <div class="old-price" aria-label="Старая цена">32500 Р.</div>
               <div class="new-price" aria-label="Новая цена">25500 Р.</div>
@@ -147,6 +150,10 @@
             <p class="shop-item-photo">
               <img src="img/Perforator-3000.jpg" width="217" height="170" alt="Фото товара перфоратор BOSCH BFG 3000">
             </p>
+            <form class="add-item" action="https://echo.htmlacademy.ru" method="post">
+              <button class="add-to-cart" name="to-cart-button" value="В корзину"><span>Купить</span></button>
+              <button class="add-to-bookmarks" name="to-bookmarks-button" value="В закладки"><span>В закладки</span></button>
+            </form>
             <p class="shop-item-price" aria-label="Цена товара">
               <div class="old-price" aria-label="Старая цена">22500 Р.</div>
               <div class="new-price" aria-label="Новая цена">12500 Р.</div>
@@ -159,6 +166,10 @@
             <p class="shop-item-photo">
               <img src="img/Perforator-6000-and-2000.jpg" width="217" height="170" alt="Фото товара перфоратор BOSCH BFG 6000">
             </p>
+            <form class="add-item" action="https://echo.htmlacademy.ru" method="post">
+              <button class="add-to-cart" name="to-cart-button" value="В корзину"><span>Купить</span></button>
+              <button class="add-to-bookmarks" name="to-bookmarks-button" value="В закладки"><span>В закладки</span></button>
+            </form>
             <p class="shop-item-price" aria-label="Цена товара">
               <div class="old-price" aria-label="Старая цена">30500 Р.</div>
               <div class="new-price" aria-label="Новая цена">25500 Р.</div>
@@ -172,6 +183,10 @@
             <p class="shop-item-photo">
               <img src="img/Perforator-6000-and-2000.jpg" width="217" height="170" alt="Фото товара перфоратор BOSCH BFG 2000">
             </p>
+            <form class="add-item" action="https://echo.htmlacademy.ru" method="post">
+              <button class="add-to-cart" name="to-cart-button" value="В корзину"><span>Купить</span></button>
+              <button class="add-to-bookmarks" name="to-bookmarks-button" value="В закладки"><span>В закладки</span></button>
+            </form>
             <p class="shop-item-price" aria-label="Цена товара">
               <div class="old-price hidden" aria-label="Старая цена">12500 Р.</div>
               <div class="new-price" aria-label="Новая цена">12500 Р.</div>
@@ -225,13 +240,16 @@
         <div class="services-info-block">
           <ul class="services-list" aria-label="Список услуг" role="tablist">
             <li>
-              <span class="service-button" id="delivery-info">Доставка</span>
+              <button class="service-button" type="button" name="delivery-button">Доставка</button>
+              <!-- <a class="service-button" href="#" id="delivery-info">Доставка</a> -->
             </li>
             <li>
-              <span class="service-button">Гарантия</span>
+              <button class="service-button" type="button" name="warranty-button"><span>Закрыть</span></button>
+              <!-- <a class="service-button" href="#">Гарантия</a> -->
             </li>
             <li>
-              <span class="service-button">Кредит</span>
+              <button class="service-button" type="button" name="credit-button"><span>Закрыть</span></button>
+              <!-- <a class="service-button" href="#">Кредит</a> -->
             </li>
           </ul>
           <div class="services-text">
@@ -326,7 +344,7 @@
         <ul class="developers-contacts">
           <li>
             <p>Обратная связь:</p>
-            <p class="mail-developers" lang="en" aria-label="Электронная почта">mail@htmlacademy.ru</p>
+            <a class="mail-developers" lang="en" aria-label="Электронная почта">mail@htmlacademy.ru</a>
           </li>
           <li>
             <p>Разработано - </p>
