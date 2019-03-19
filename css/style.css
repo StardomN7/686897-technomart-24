@@ -1520,7 +1520,7 @@ input[type="search"] {
   width: 60px;
   height: 60px;
   overflow: hidden;
-  z-index: 20;
+  z-index: 30;
   /* background-color: #000000; */
   background-image: url("../img/new-flag.png");
   background-repeat: no-repeat;
@@ -2115,6 +2115,7 @@ fieldset {
   display: none;
   top: 0;
   left: 0;
+  /* width: 100%; */
   padding: 25px;
   padding-top: 50px;
   background-color: rgba(0, 0, 0, 0.7);
