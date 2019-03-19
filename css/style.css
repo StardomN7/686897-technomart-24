@@ -1045,6 +1045,10 @@ input[type="search"] {
   margin: 0;
 }
 
+.info-perforators h2 {
+  margin-bottom: 20px;
+}
+
 .services h3 {
   font-size: 36px;
   font-weight: 300;
