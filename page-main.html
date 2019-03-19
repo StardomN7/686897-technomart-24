@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
     <meta charset="utf-8">
@@ -17,7 +17,7 @@
       <div class="users-services">
         <div class="centering-container">
           <a class="logo" href="#">
-            <img src="img/logo.png" width="100" height="20" alt="Магазин &laquo;Техномарт&raquo;">
+            <img src="img/logo.png" width="110" height="20" alt="Магазин &laquo;Техномарт&raquo;">
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <label for="site-search" class="search-field">Поиск: </label>
@@ -94,9 +94,22 @@
         </div>
         <div class="category-cards-bottom">
         <div class="tool-gallery">
-          <h3>Дрели</h3>
-          <b>Соседям на радость!</b>
-          <a href="catalog.html" class="button">Открыть каталог</a>
+          <input type="radio" class="slider-previous" name="radio-slider" value="previous" id="radio-slider-previous" checked>
+          <label for="radio-slider-previous"> </label>
+          <input type="radio" class="slider-next" name="radio-slider" value="next" id="radio-slider-next">
+          <label for="radio-slider-next"> </label>
+          <ul class="slider-list">
+            <li class="slider-drills" id="slide-drills">
+              <h3>Дрели</h3>
+              <b>Соседям на радость!</b>
+              <a href="catalog.html" class="button">Открыть каталог</a>
+            </li>
+            <li class="slider-perforators" id="slide-perforators">
+              <h3>Перфораторы</h3>
+              <b>Настоящие мужские игрушки</b>
+              <a href="catalog.html" class="button">Открыть каталог</a>
+            </li>
+          </ul>
         </div>
         <div class="category-cards-side">
           <ul class="main-categories">
@@ -240,24 +253,42 @@
         <div class="services-info-block">
           <ul class="services-list" aria-label="Список услуг" role="tablist">
             <li>
-              <button class="service-button" type="button" name="delivery-button">Доставка</button>
+              <button class="service-button" type="button" name="delivery-button" id="delivery-button">Доставка</button>
               <!-- <a class="service-button" href="#" id="delivery-info">Доставка</a> -->
             </li>
             <li>
-              <button class="service-button" type="button" name="warranty-button"><span>Закрыть</span></button>
+              <button class="service-button" type="button" name="warranty-button" id="warranty-button"><span>Гарантия</span></button>
               <!-- <a class="service-button" href="#">Гарантия</a> -->
             </li>
             <li>
-              <button class="service-button" type="button" name="credit-button"><span>Закрыть</span></button>
+              <button class="service-button" type="button" name="credit-button" id="credit-button"><span>Кредит</span></button>
               <!-- <a class="service-button" href="#">Кредит</a> -->
             </li>
           </ul>
           <div class="services-text">
-            <h3>Доставка</h3>
-            <p role="tabpanel" aria-labelledby="delivery-info">
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-            </p>
+            <ul class="services-text-list">
+              <li id="delivery-text">
+                <h3>Доставка</h3>
+                <p role="tabpanel" aria-labelledby="delivery-info">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                </p>
+              </li>
+              <li id="warranty-text">
+                <h3>Гарантия</h3>
+                <p role="tabpanel" aria-labelledby="delivery-info">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                </p>
+              </li>
+              <li id="credit-text">
+                <h3>Кредит</h3>
+                <p role="tabpanel" aria-labelledby="delivery-info">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -279,8 +310,8 @@
       <section class="our-contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <a class="show-map" href="#"><img src="img/Map.jpg" width="300" height="158" alt="Адрес магазина - Санкт-Петербург, улица Большая Конюшенная, дом 19"></a>
-        <a class="button" href="contact-us.html">Заблудились? Напишите нам!</a>
+        <a class="show-map" href="#"><img src="img/map-small.jpg" width="300" height="158" alt="Адрес магазина - Санкт-Петербург, улица Большая Конюшенная, дом 19"></a>
+        <a class="button contact-us" href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
     </main>
@@ -289,7 +320,7 @@
       <div class="address-and-navigation">
       <div class="centering-container">
         <div class="footer-top-row">
-          <a class="logo-footer" href="#"><img src="#" width="20" height="20" alt="Логотип магазина"></a>
+          <a class="logo-footer" href="#"><img src="img/logo.png" width="130" height="25" alt="Логотип магазина"></a>
           <ul class="footer-navigation" aria-label="Навигация по сайту">
             <li><a href="company.html">Компания</a></li>
             <li><a href="news.html">Новости</a></li>
@@ -382,9 +413,84 @@
 </section>
 
 <section class="full-map">
-  <img src="img/map-full.jpg" alt="Карта" width="100%">
   <button class="close-window" type="button" name="closing-button"><span>Закрыть</span></button>
+  <img src="img/map-full.jpg" alt="Карта" width="100%">
 </section>
+
+<script>
+
+  // var delivery = document.getElementById("delivery-button");
+  // var warranty = document.getElementById("warranty-button");
+  // var credit = document.getElementById("credit-button");
+  // var delivery_div = document.getElementById("delivery-text");
+  // var warranty_div = document.getElementById("warranty-text");
+  // var credit_div = document.getElementById("credit-text");
+
+  var message = document.querySelector(".contact-us");
+  var popup_message = document.querySelector(".popup-client-message");
+  var close = popup_message.querySelector(".close-window");
+  var form = popup_message.querySelector("form");
+  var name = popup_message.querySelector("[name=client-name]");
+  var email = popup_message.querySelector("[name=client-email]");
+  var map = document.querySelector(".show-map");
+  var map_full = document.querySelector(".full-map");
+  var map_close = map_full.querySelector(".close-window");
+
+  // delivery.addEventListener("click", function (evt) {
+  //   evt.preventDefault();
+  //   delivery_div.classList.add("show-service-text");
+  // });
+  // warranty.addEventListener("click", function (evt) {
+  //   evt.preventDefault();
+  //   warranty_div.classList.add("show-service-text");
+  // });
+  // credit.addEventListener("click", function (evt) {
+  //   evt.preventDefault();
+  //   credit_div.classList.add("show-service-text");
+  // });
+
+  message.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup_message.classList.add("popup-client-message-show");
+    name.focus();
+  });
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup_message.classList.remove("popup-client-message-show");
+  });
+  form.addEventListener("submit", function (evt) {
+    if (!name.value || !email.value) {
+        evt.preventDefault();
+        console.log("Введите имя и электронный адрес");
+      }
+  });
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup_message.classList.contains("popup-client-message-show")) {
+        popup_message.classList.remove("popup-client-message-show");
+      }
+    }
+  });
+
+  map.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    map_full.classList.add("popup-client-message-show");
+  });
+  map_close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    map_full.classList.remove("popup-client-message-show");
+  });
+  window.addEventListener("keydown", function (evt) {
+    evt.preventDefault();
+    if (evt.keyCode === 27) {
+      if (map_full.classList.contains("popup-client-message-show")) {
+        map_full.classList.remove("popup-client-message-show");
+      }
+    }
+  });
+
+</script>
 
   </body>
 </html>
