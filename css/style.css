@@ -2225,6 +2225,10 @@ input[type="radio"].hidden {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+iframe {
+  border-width: 0px;
+}
+
 .popup-item-added,
 .popup-client-message {
   background-color: #ffffff;
