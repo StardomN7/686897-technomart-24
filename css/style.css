@@ -2363,12 +2363,18 @@ input[type="radio"].hidden {
 }
 
 .sorting .ascending,
-.sorting .descending {
+.sorting .descending,
+.sorting .ascending:hover,
+.sorting .descending:hover,
+.sorting .ascending:focus,
+.sorting .descending:focus,
+.sorting .ascending:active,
+.sorting .descending:active {
   /* display: none; */
   font-size: 1px;
   position: relative;
   border: none;
-  color: transparent
+  color: transparent;
 }
 
 .sorting .ascending::after {
